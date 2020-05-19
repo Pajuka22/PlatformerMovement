@@ -135,7 +135,6 @@ public class MovementController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log(col.gameObject.name);
         if ((WhatIsWater.value & 1 << col.gameObject.layer) == 1 << col.gameObject.layer)
         {
             inWater++;
